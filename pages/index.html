@@ -26,7 +26,13 @@
                 <li><a href="about.html" class="navbar-element important-text">Quienes Somos</a></li>
                 <li><a href="contact.html" class="navbar-element important-text">Contacto</a></li>
                 <li><a href="cart.html"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a></li>
+                <a href="#"><i id="close" class="bi bi-x-lg"></i></a>
             </ul>
+
+            <div id="mobile">
+                <a href="cart.html"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a>
+                <i id="bar" class="bi bi-list active"></i>
+            </div>
     </section>
 
     <!-- Hero -->
@@ -126,47 +132,28 @@
     <!-- Footer -->
     <section id="footer">
         <div id="footer-data">
-
-            <!-- About Us -->
-            <div id="about-us">
-                <h2 class="important-text white-text footer-title">Acerca de Nosotros</h2>
-                <ul>
-                    <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">Nuestra Misión</a></li>
-                </ul>
+            <div id="footer-titles">
+                <!-- About Us -->
+                <h2 id="footer-title" class="important-text white-text footer-title">Acerca de Nosotros</h2>
+                <!-- Account -->
+                <h2 id="footer-title" class="important-text white-text footer-title">Mi Cuenta</h2>
+                <!-- Contact -->
+                <h2 id="footer-title" class="important-text white-text footer-title">Contacto</h2>
+                <!-- Social Media -->
+                <div id="social-media-items">
+                    <button id="social-button"><i class="bi bi-facebook"></i></button>
+                    <button id="social-button"><i class="bi bi-twitter"></i></button>
+                    <button id="social-button"><i class="bi bi-instagram"></i></button>
+                </div>
+                <div id="footer-logos">
+                    <a href="#"><img src="images\logos\logo-white.png" alt="logo-oscaralfrm" width="150px"></a>
+                    <a href="#"><img src="images\logos\VolpeWhite.png" alt="logo-volpe" width="150px"></a>
+                </div>
             </div>
-
-            <!-- Account -->
-            <div id="account">
-                <h2 class="important-text white-text footer-title">Mi Cuenta</h2>
-                <ul>
-                    <li><a href="#">Conectarse</a></li>
-                    <li><a href="#">Mi Carrito</a></li>
-                    <li><a href="#">Mi Lista de Deseos</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div id="contact">
-                <h2 class="important-text white-text footer-title">Contacto</h2>
-            </div>
-
-            <!-- Payment Methods -->
-            <div id="payment-methods">
-                <h2 class="important-text white-text footer-title">Métodos de Pago</h2>
-            </div>
-
-            <!-- Social Media -->
-            <div id="social-media">
-                <h2 class="important-text white-text footer-title">Redes Sociales</h2>
-            </div>
-
         </div>
 
-        <div id="footer-logos">
-            <a href="#"><img src="images\logos\logo-white.png" alt="logo-oscaralfrm" width="150px"></a>
-            <a href="#"><img src="images\logos\VolpeWhite.png" alt="logo-volpe" width="150px"></a>
-        </div>
+        <h4 id="footer-copyright" class="white-text footer-title">Ⓒ 2023. Volpe Men's Fashion & Couture, Tux Company. e-Commerce Ficticio. Página Web de Práctica.</h4>
+
     </section>
 
     <script src=".\scripts\index.js"></script>
