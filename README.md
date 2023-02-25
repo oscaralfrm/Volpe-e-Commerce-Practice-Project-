@@ -18,6 +18,7 @@
   <p align="center">
    <img src="https://img.shields.io/badge/TECNOLOGÍA-Python-FFD43B">
    <img src="https://img.shields.io/badge/TECNOLOGÍA-Django-092E20">
+  <img src="https://img.shields.io/badge/TECNOLOGÍA-SQLite-008080">
   </p>
    
  ## :hammer: Funcionalidades del proyecto :hammer:
