@@ -17,11 +17,17 @@
     <!-- Header (Navbar) -->
     <section id="header">
             <!-- Logo -->
-            <a href="#"><img src="images\logos\VolpeWhite.png" alt="logo-volpe"></a>
+            <a href="#"><img src="images\logos\VolpeWhite.png" alt="logo-volpe" id="volpe-logo"></a>
             <!-- Proper navbar elements -->
             <ul id="navbar">
                 <li><a href="index.html" class="navbar-element important-text active">Inicio</a></li>
-                <li><a href="account.html" class="navbar-element important-text">Mi Cuenta</a></li>
+                <li><a href="login.html" class="navbar-element important-text" id="my-account">Mi Cuenta</a></li>
+
+                <ul id="account-options">
+                    <li><a href="register.html" class="important-text">Registrarse</a></li>
+                    <li><a href="login.html" class="important-text">Iniciar Sesión</a></li>
+                </ul>
+
                 <li><a href="tienda.html" class="navbar-element important-text">Tienda</a></li>
                 <li><a href="about.html" class="navbar-element important-text">Quienes Somos</a></li>
                 <li><a href="contact.html" class="navbar-element important-text">Contacto</a></li>
@@ -113,7 +119,7 @@
         <h2 class="important-text white-text" id="rentals-header">Servicio de Alquiler de Trajes</h2>
         <h3>Hasta un <span class="orange-text">50% de descuento</span></h3>
         <h3>en trajes <span class="yellow-text">elegantes, modernos y de marca.</span></h3>
-        <a href="tienda.html"><button class="important-text">Explora nuestras opciones</button></a>
+        <a href="tienda.html"><button class="important-text" id="rental-button">Explora nuestras opciones</button></a>
     </section>
 
     <!-- Newsletter -->
