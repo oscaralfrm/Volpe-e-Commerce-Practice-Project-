@@ -16,7 +16,7 @@
    </p>
    
   <p align="center">
-   <img src="https://img.shields.io/badge/TECNOLOGÍA-Python-00FFFF">
+   <img src="https://img.shields.io/badge/TECNOLOGÍA-Python-ffde57">
    <img src="https://img.shields.io/badge/TECNOLOGÍA-Django-092E20">
   </p>
    
