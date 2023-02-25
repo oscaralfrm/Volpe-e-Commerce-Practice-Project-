@@ -15,6 +15,11 @@
    <img src="https://img.shields.io/badge/ESTADO-En_Desarrollo-brightgreen">
    </p>
    
+  <p align="center">
+   <img src="https://img.shields.io/badge/TECNOLOGÍA-Python-00FFFF">
+   <img src="https://img.shields.io/badge/TECNOLOGÍA-Django-092E20">
+  </p>
+   
  ## :hammer: Funcionalidades del proyecto :hammer:
 
 - `Funcionalidad 1`: Permitir a los Usuarios manejarse en una página de e-Commerce, que sea responsive para múltiples cortes (Ordenador / Tablet / Celular). 
