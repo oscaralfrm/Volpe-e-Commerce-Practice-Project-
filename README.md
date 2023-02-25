@@ -35,12 +35,12 @@
 - CSS
 - JavaScript
 
-# Back-End (A implementar)
+# Back-End
 - Python
 - Django
 
-# Base de Datos (A implementar)
-- MySQL
+# Base de Datos
+- SQLite3
 
 
 <h1 align="center"> Futuras Actualizaciones</h1>
