@@ -55,7 +55,7 @@ ROOT_URLCONF = 'volpe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['volpe/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
