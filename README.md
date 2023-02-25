@@ -31,8 +31,8 @@
 - JavaScript
 
 # Back-End (A implementar)
-- Java
-- SpringBoot
+- Python
+- Django
 
 # Base de Datos (A implementar)
 - MySQL
