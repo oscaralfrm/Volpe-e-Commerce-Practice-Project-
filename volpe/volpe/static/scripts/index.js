@@ -20,7 +20,7 @@ if (closeButton) {
     })
 }
 
-/* Toggle My Account Options */
+/* Toggle My Account Options - Desktop View */ 
 
 if (myAccount) {
     myAccount.addEventListener('mouseover', () => {

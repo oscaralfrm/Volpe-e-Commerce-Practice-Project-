@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="{% static 'images/logos/favicon.png' %}">
 </head>
 <body>
@@ -45,9 +44,9 @@
     <!-- Hero -->
     <section id="hero">
         
-        <h4>Los mejores estilos</h4>
-        <h2 class="orange-text">Para ellos.</h2>
-        <h4>Hasta un 25% de descuento</h4>
+        <h4 class="important-text">Los mejores estilos</h4>
+        <h2 class="orange-text important-text">Para ellos.</h2>
+        <h4 id="hero-subtitle" class="important-text">Hasta un 25% de descuento</h4>
 
         <button class="important-text white-text">¡Mira las ofertas!</button>
 
@@ -60,52 +59,52 @@
         <div class="card-container">
 
             <div class="card">
-                <img src=".\images\clothes\tommy-hilfiger-slim-fit-blue-shirt.png" alt="male-shirt" width="60px" height="90px" class="card-image-background">
+                <img src="{% static 'images/clothes/shirt-blue.jpg' %}" alt="male-shirt" width="60px" height="90px" class="card-image-background">
                 <div class="card-data">
-                    <h2 class="yellow-text card-title">Lorem.</h2>
-                    <h4 class="card-subtitle">Lorem.</h4>
-                    <img src=".\images\props\5-Stars-PNG-Transparent.png" alt="stars" height="40vh">
+                    <h2 class="yellow-text card-title important-text">Camisa Casual</h2>
+                    <h4 class="card-subtitle important-text">Volpe Fashion</h4>
+                    <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
-                        <h2 class="card-title">$19.99</h2>
+                        <h2 class="card-title bold">$19.99</h2>
                         <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src=".\images\clothes\tommy-hilfiger-slim-fit-blue-shirt.png" alt="male-shirt" width="60px" height="90px" class="card-image-background">
+                <img src="{% static 'images/clothes/shirt-gray.jpg' %}" alt="male-shirt" width="60px" height="90px" class="card-image-background">
                 <div class="card-data">
-                    <h2 class="yellow-text card-title">Lorem.</h2>
-                    <h4 class="card-subtitle">Lorem.</h4>
-                    <img src=".\images\props\5-Stars-PNG-Transparent.png" alt="stars" height="40vh">
+                    <h2 class="yellow-text card-title important-text">Camisa Casual</h2>
+                    <h4 class="card-subtitle important-text">Volpe Fashion</h4>
+                    <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
-                        <h2 class="card-title">$19.99</h2>
+                        <h2 class="card-title bold">$19.99</h2>
                         <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src=".\images\clothes\tommy-hilfiger-slim-fit-blue-shirt.png" alt="male-shirt" width="60px" height="90px" class="card-image-background">
+                <img src="{% static 'images/clothes/shirt-red.jpg' %}" alt="male-shirt" width="60px" height="90px" class="card-image-background">
                 <div class="card-data">
-                    <h2 class="yellow-text card-title">Lorem.</h2>
-                    <h4 class="card-subtitle">Lorem.</h4>
-                    <img src=".\images\props\5-Stars-PNG-Transparent.png" alt="stars" height="40vh">
+                    <h2 class="yellow-text card-title important-text">Camisa Casual</h2>
+                    <h4 class="card-subtitle important-text">Volpe Fashion</h4>
+                    <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
-                        <h2 class="card-title">$19.99</h2>
+                        <h2 class="card-title bold">$19.99</h2>
                         <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <img src=".\images\clothes\tommy-hilfiger-slim-fit-blue-shirt.png" alt="male-shirt" width="60px" height="90px" class="card-image-background">
+                <img src="{% static 'images/clothes/shirt-white.jpg' %}" alt="male-shirt" width="60px" height="90px" class="card-image-background">
                 <div class="card-data">
-                    <h2 class="yellow-text card-title">Lorem.</h2>
-                    <h4 class="card-subtitle">Lorem.</h4>
-                    <img src=".\images\props\5-Stars-PNG-Transparent.png" alt="stars" height="40vh">
+                    <h2 class="yellow-text card-title important-text">Camisa Casual</h2>
+                    <h4 class="card-subtitle important-text">Volpe Fashion</h4>
+                    <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
-                        <h2 class="card-title">$19.99</h2>
+                        <h2 class="card-title bold">$19.99</h2>
                         <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
@@ -118,8 +117,8 @@
     <!-- Suit Rentals -->
     <section id="rentals">
         <h2 class="important-text white-text" id="rentals-header">Servicio de Alquiler de Trajes</h2>
-        <h3>Hasta un <span class="orange-text">50% de descuento</span></h3>
-        <h3>en trajes <span class="yellow-text">elegantes, modernos y de marca.</span></h3>
+        <h3 class="important-text">Hasta un <span class="important-text orange-text">50% de descuento</span></h3>
+        <h3 class="important-text">en trajes <span class="important-text yellow-text">elegantes, modernos y de marca.</span></h3>
         <a href="tienda.html"><button class="important-text" id="rental-button">Explora nuestras opciones</button></a>
     </section>
 
@@ -153,8 +152,8 @@
                     <button id="social-button"><i class="bi bi-instagram"></i></button>
                 </div>
                 <div id="footer-logos">
-                    <a href="#"><img src="images\logos\logo-white.png" alt="logo-oscaralfrm" width="150px"></a>
-                    <a href="#"><img src="images\logos\VolpeWhite.png" alt="logo-volpe" width="150px"></a>
+                    <a href="#"><img src="{% static 'images\logos\logo-white.png' %}" alt="logo-oscaralfrm" width="150px"></a>
+                    <a href="#"><img src="{% static 'images\logos\VolpeWhite.png' %}" alt="logo-volpe" width="150px"></a>
                 </div>
             </div>
         </div>
