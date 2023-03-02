@@ -183,244 +183,9 @@ body {
     display: none;
 }
 
+/* Registration Form */
 
-/* Hero Section */
-#hero {
-    background-image: url("../images/people/hero-section.png");
-    background-color: #F0A500;
-    height: 40%;
-    width: 100%;
-    background-size: auto;
-    background-position: top 100% right 120px;
-    background-repeat: no-repeat;
-    padding: 50px 0 50px 60px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#hero h4:nth-child(1) {
-    padding-bottom: 10px;
-    padding-left: 5vw;
-    font-size: 40px;
-}
-
-#hero-subtitle {
-    font-size: 40px;
-    padding-left: 0.5vw;
-}
-
-#hero h2 {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 5vw;
-    font-size: 70px;
-}
-
-#hero button {
-    font-size: 40px;
-    padding: 2px;
-    background-color: #1B1A17;
-    margin-top: 20px;
-    height: 10vh;
-    width: 20vw;
-    border: 0;
-    border-style: none;
-    margin-left: 50px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    overflow-wrap: clip;
-}
-
-#hero-button {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-}
-
-/* Featured Products */
-#featured {
-    background-image: url("../images/props/wood-3-background.jpg");
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: #E6D5B8;
-}
-
-#featured-title {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-#featured img {
-    text-align: center;
-    position: relative;
-    object-fit: cover;
-}
-
-#featured .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.card-container {
-    gap: 5em;
-}
-
-.card {
-    height: 90%;
-    width: 100%;
-    padding: 0.4em 0.8em;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 5%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    text-align: justify;
-    align-items: center;
-}
-
-.card-image-background {
-    margin-top: 10px;
-    padding: 5px;
-    background: #E6D5B8;
-    width: 120px;
-    height: 120px;
-}
-
-.card-title {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.card-subtitle {
-    font-size: 25px;
-}
-
-
-.price-and-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 10px;
-}
-
-#price-button {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    font-size: 30px;
-    background: #E45826;
-    border-radius: 50%;
-    border-style: none;
-    color: white;
-    cursor: pointer;
-    transition: 0.15s ease;
-}
-
-#price-button:active {
-    background-color: #F0A500;
-}
-
-/* Suit Rentals */
-
-#rentals {
-    background-image: url("../images/people/renta-trajes.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #1B1A17;
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-#rentals h2 {
-    padding: 20px;
-}
-
-#rentals h3 {
-    font-size: 40px;
-    padding: 5px;
-}
-
-#rentals button {
-    margin-top: 15px;
-    padding: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    overflow-wrap: clip;
-}
-
-/* Newsletter */
-
-#newsletter {
-    background-color: #E45826;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#news-form {
-    padding: 20px;
-}
-
-#news-data {
-    text-overflow: clip;
-    padding-left: 3em;
-}
-
-#news-data h2 {
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: white;
-    margin-right: 40px;
-}
-
-#news-data h4 {
-    font-size: 25px;
-    letter-spacing: 2px;
-    color: white;
-}
-
-#email-data {
-    padding: 12.75px;
-    width: 30vw;
-    text-align: center;
-    font-size: 25px;
-    border: 0;
-}
-
-#email-button {
-    padding: 10.8px;
-    font-size: 27px;
-    height: 2.14em;
-    background-color: #1B1A17;
-    border: 0;
-    cursor: pointer;
-}
+/* Fox Background */
 
 /* Footer */
 
@@ -522,36 +287,6 @@ body {
 /* Media Queries*/
 /* Desktop PC 1 / Nest Hub Max */
 @media (max-width: 1377px) {
-    /* Hero */
-    #hero {
-        justify-content: center;
-    }
-
-    #hero button {
-        width: 21vw;
-        font-size: 40px;
-    }
-
-
-    /* Featured Products */
-    #featured-title {
-        margin-bottom: 10px;
-    }
-
-    #featured .card-container {
-        flex-flow: row nowrap;
-        padding: 50px;
-        gap: 2em;
-    }
-
-    /* Newsletter */
-    #newsletter {
-        height: 25vh;
-    }
-
-    #news-data h2, #news-data h4 {
-        font-size: 18px;
-    }
 
 }
 
@@ -604,49 +339,6 @@ body {
     /* Navbar */
     #navbar {
         text-align: center;
-    }
-
-    /* Hero */
-    #hero {
-        background-size: cover;
-        background-position: center;
-        justify-content: center;
-        align-items: center;
-        padding: 100px;
-    }
-
-    #hero h2, #hero h4 {
-        display: none;
-    }
-
-    #hero button {
-        margin-top: 200px;
-        width: 40vw;
-        font-size: 40px;
-    }
-
-    /* Featured Products */
-    #featured {
-        background-size: cover;
-    }
-
-    #featured .card-container {
-        flex-flow: column wrap;
-        padding: 50px;
-    }
-
-    /* Suiter Rentals */
-    #rentals-header {
-        font-size: 40px;
-    }
-
-    /* Newsletter */
-    #newsletter {
-        background-position: 0 0;
-    }
-
-    #news-data h2, #news-data h4 {
-        font-size: 18px;
     }
 
     /* Footer */
@@ -730,11 +422,6 @@ body {
         transition: 0.3s ease;
         border-radius: 10% 0 0 10%;
         gap: 5px;
-    }
-
-    /* Hero */
-    #hero button {
-        padding: 20px;
     }
 
     /* Footer */
@@ -828,46 +515,6 @@ body {
         gap: 5px;
     }
 
-    /* Hero Section */
-    #hero {
-        padding: 100px;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-position: top 100% center;
-    }
-
-    #hero button {
-        margin-top: 130px;
-        width: 60vw;
-    }
-
-    #hero h2, #hero h4 {
-        display: none;
-    }
-
-    /* Suit Rentals */
-
-    #rentals {
-        height: 50vh;
-    }
-
-
-    /* Featured Products */
-    .card {
-        max-width: 300px;
-    }
-
-    #featured .card-container {
-        flex-wrap: wrap;
-        gap: 2em;
-    }
-
-    /* Newsletter */
-    #newsletter {
-        text-align: center;
-    }
-
     /* Footer */
     #footer {
         padding: 20px;
@@ -901,41 +548,6 @@ body {
         height: 500px;
     }
 
-    /* Hero */
-
-    #hero button {
-        font-size: 25px;
-        margin-right: 30px;
-    }
-
-    /* Featured Products */
-    .card-container {
-        gap: 2em;
-    }
-
-    /* Suit Rentals */
-    #rentals {
-        flex-flow: column nowrap;
-        height: 80vh;
-        min-height: 700px;
-    }
-
-    /* Newsletter */
-    #newsletter {
-        height: 60vh;
-        min-height: 400px;
-    }
-
-    #newsletter h2, #newsletter h4 {
-        font-size: 20px;
-        padding-left: 15vw;
-        text-align: center;
-    }
-
-    #newsletter h4 {
-        padding-right: 50px;
-    }
-
 }
 
 /* Small Mobile / iPhone SE */
@@ -959,59 +571,6 @@ body {
         margin-right: 30px;
     }
 
-    /* Hero */
-    #hero-button {
-        width: 300px;
-    }
-
-    /* Featured Products */
-    #featured {
-        flex-direction: column;
-        text-align: center;
-        min-height: 600px;
-        padding: 50px 0px;
-    }
-
-    #featured-title {
-        font-size: 40px;
-    }
-
-    #featured .card-container {
-        padding: 0px;
-    }
-
-    .card {
-        padding: 0px;
-    }
-
-    /* Suit Rentals */
-    #rentals-header {
-        margin-top: 100px;
-    }
-
-    #rental-button {
-        padding: 10px;
-        margin-bottom: 100px;
-    }
-
-    /* Newsletter */
-    #newsletter {
-        height: 40vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #news-data {
-        padding-left: 0px;
-    }
-
-    #news-data h2, #news-data h4 {
-        font-size: 20px;
-        text-align: center;
-    }
-
     /* Footer */
     #footer-data {
         padding-left: 0px;
@@ -1020,31 +579,5 @@ body {
 
 /* Landscape Versions */
 @media (orientation: landscape) and (max-width: 999px) {
-    /* Hero */
-    #hero button {
-        font-size: 30px;
-        height: 10vh;
-        margin-top: 90px;
-    }
 
-    /* Featured Products */
-    .card-container {
-        gap: 2em;
-    }
-
-    /* Suit Rentals */
-    #rentals {
-        flex-flow: row wrap;
-        height: 50vh;
-        padding: 20px;
-    }
-
-    #rental-button {
-        margin-bottom: 50px;
-    }
-
-    /* Newsletter */
-    #newsletter {
-        height: 40vh;
-    }
 }

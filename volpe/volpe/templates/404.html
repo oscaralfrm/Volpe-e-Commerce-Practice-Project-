@@ -14,63 +14,63 @@
     <link rel="stylesheet" href="{% static 'styles/404.css' %}">
 </head>
 <body>
-        <!-- Header (Navbar) -->
-        <section id="header">
-            <!-- Logo -->
-            <a href="#"><img src="{% static 'images/logos/VolpeWhite.png' %}" alt="logo-volpe" id="volpe-logo"></a>
-            <!-- Proper navbar elements -->
-            <ul id="navbar">
-                <li><a href="index.html" class="navbar-element important-text active">Inicio</a></li>
-                <li><a href="login.html" class="navbar-element important-text" id="my-account">Mi Cuenta</a></li>
+    <!-- Header (Navbar) -->
+    <section id="header">
+        <!-- Logo -->
+        <a href="{% url 'index' %}"><img src="{% static 'images/logos/VolpeWhite.png' %}" alt="logo-volpe" id="volpe-logo"></a>
+        <!-- Proper navbar elements -->
+        <ul id="navbar">
+            <li><a href="{% url 'index' %}" class="navbar-element important-text active">Inicio</a></li>
+            <li><a href="{% url 'mi-cuenta' %}" class="navbar-element important-text" id="my-account">Mi Cuenta</a></li>
 
-                <ul id="account-options">
-                    <li><a href="register.html" class="important-text">Registrarse</a></li>
-                    <li><a href="login.html" class="important-text">Iniciar Sesión</a></li>
-                </ul>
-
-                <li><a href="tienda.html" class="navbar-element important-text">Tienda</a></li>
-                <li><a href="about.html" class="navbar-element important-text">Quienes Somos</a></li>
-                <li><a href="contact.html" class="navbar-element important-text">Contacto</a></li>
-                <li><a href="cart.html"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a></li>
-                <a href="#"><i id="close" class="bi bi-x-lg"></i></a>
+            <ul id="account-options">
+                <li><a href="{% url 'registrarse' %}" class="important-text">Registrarse</a></li>
+                <li><a href="{% url 'conectarse' %}" class="important-text">Iniciar Sesión</a></li>
             </ul>
 
-            <div id="mobile">
-                <a href="cart.html"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a>
-                <i id="bar" class="bi bi-list active"></i>
-            </div>
-        </section>
+            <li><a href="{% url 'tienda' %}" class="navbar-element important-text">Tienda</a></li>
+            <li><a href="{% url 'acerca-de-nosotros' %}" class="navbar-element important-text">Quienes Somos</a></li>
+            <li><a href="{% url 'contacto' %}" class="navbar-element important-text">Contacto</a></li>
+            <li><a href="{% url 'mi-carrito' %}"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a></li>
+            <i id="close" class="bi bi-x-lg"></i>
+        </ul>
 
-        <!-- Error404 -->
-        <section id="header">
-        </section>
+        <div id="mobile">
+            <a href="{% url 'mi-carrito' %}"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a>
+            <i id="bar" class="bi bi-list active"></i>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <section id="footer">
-            <div id="footer-data">
-                <div id="footer-titles">
-                    <!-- About Us -->
-                    <h2 id="footer-title" class="important-text white-text footer-title">Acerca de Nosotros</h2>
-                    <!-- Account -->
-                    <h2 id="footer-title" class="important-text white-text footer-title">Mi Cuenta</h2>
-                    <!-- Contact -->
-                    <h2 id="footer-title" class="important-text white-text footer-title">Contacto</h2>
-                    <!-- Social Media -->
-                    <div id="social-media-items">
-                        <button id="social-button"><i class="bi bi-facebook"></i></button>
-                        <button id="social-button"><i class="bi bi-twitter"></i></button>
-                        <button id="social-button"><i class="bi bi-instagram"></i></button>
-                    </div>
-                    <div id="footer-logos">
-                        <a href="#"><img src="{% static 'images\logos\logo-white.png' %}" alt="logo-oscaralfrm" width="150px"></a>
-                        <a href="#"><img src="{% static 'images\logos\VolpeWhite.png' %}" alt="logo-volpe" width="150px"></a>
-                    </div>
+    <!-- Error404 -->
+    <section id="error404">
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div id="footer-data">
+            <div id="footer-titles">
+                <!-- About Us -->
+                <h2 id="footer-title" class="important-text white-text footer-title"><a id="footer-link" class="important-text" href="{% url 'acerca-de-nosotros' %}">Acerca de Nosotros</a></h2>
+                <!-- Account -->
+                <h2 id="footer-title" class="important-text white-text footer-title"><a id="footer-link" class="important-text" href="{% url 'mi-cuenta' %}">Mi Cuenta</a></h2>
+                <!-- Contact -->
+                <h2 id="footer-title" class="important-text white-text footer-title"><a id="footer-link" class="important-text" href="{% url 'contacto' %}">Contacto</a></h2>
+                <!-- Social Media -->
+                <div id="social-media-items">
+                    <button id="social-button"><i class="bi bi-facebook"></i></button>
+                    <button id="social-button"><i class="bi bi-twitter"></i></button>
+                    <button id="social-button"><i class="bi bi-instagram"></i></button>
+                </div>
+                <div id="footer-logos">
+                    <a href="https://www.linkedin.com/in/oscar-romero-2726b0218/"><img src="{% static 'images\logos\logo-white.png' %}" alt="logo-oscaralfrm" width="150px"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'images\logos\VolpeWhite.png' %}" alt="logo-volpe" width="150px"></a>
                 </div>
             </div>
+        </div>
 
-            <h4 id="footer-copyright" class="white-text footer-title">Ⓒ 2023. Volpe Men's Fashion & Couture, Tux Company. e-Commerce Ficticio. Página Web de Práctica.</h4>
+        <h4 id="footer-copyright" class="white-text footer-title">Ⓒ 2023. Volpe Men's Fashion & Couture, Tux Company. e-Commerce Ficticio. Página Web de Práctica.</h4>
 
-        </section>
-    
+    </section>
+    <script src="{% static 'scripts/index.js' %}"></script>
 </body>
 </html>

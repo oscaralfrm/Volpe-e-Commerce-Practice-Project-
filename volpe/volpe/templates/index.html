@@ -17,26 +17,26 @@
     <!-- Header (Navbar) -->
     <section id="header">
             <!-- Logo -->
-            <a href="#"><img src="{% static 'images/logos/VolpeWhite.png' %}" alt="logo-volpe" id="volpe-logo"></a>
+            <a href="{% url 'index' %}"><img src="{% static 'images/logos/VolpeWhite.png' %}" alt="logo-volpe" id="volpe-logo"></a>
             <!-- Proper navbar elements -->
             <ul id="navbar">
-                <li><a href="index.html" class="navbar-element important-text active">Inicio</a></li>
-                <li><a href="login.html" class="navbar-element important-text" id="my-account">Mi Cuenta</a></li>
+                <li><a href="{% url 'index' %}" class="navbar-element important-text active">Inicio</a></li>
+                <li><a href="{% url 'mi-cuenta' %}" class="navbar-element important-text" id="my-account">Mi Cuenta</a></li>
 
                 <ul id="account-options">
-                    <li><a href="register.html" class="important-text">Registrarse</a></li>
-                    <li><a href="login.html" class="important-text">Iniciar Sesión</a></li>
+                    <li><a href="{% url 'registrarse' %}" class="important-text">Registrarse</a></li>
+                    <li><a href="{% url 'conectarse' %}" class="important-text">Iniciar Sesión</a></li>
                 </ul>
 
-                <li><a href="tienda.html" class="navbar-element important-text">Tienda</a></li>
-                <li><a href="about.html" class="navbar-element important-text">Quienes Somos</a></li>
-                <li><a href="contact.html" class="navbar-element important-text">Contacto</a></li>
-                <li><a href="cart.html"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a></li>
-                <a href="#"><i id="close" class="bi bi-x-lg"></i></a>
+                <li><a href="{% url 'tienda' %}" class="navbar-element important-text">Tienda</a></li>
+                <li><a href="{% url 'acerca-de-nosotros' %}" class="navbar-element important-text">Quienes Somos</a></li>
+                <li><a href="{% url 'contacto' %}" class="navbar-element important-text">Contacto</a></li>
+                <li><a href="{% url 'mi-carrito' %}"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a></li>
+                <i id="close" class="bi bi-x-lg"></i>
             </ul>
 
             <div id="mobile">
-                <a href="cart.html"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a>
+                <a href="{% url 'mi-carrito' %}"><span class="material-symbols-outlined" id="shop-icon">shopping_cart</span></a>
                 <i id="bar" class="bi bi-list active"></i>
             </div>
     </section>
@@ -48,7 +48,7 @@
         <h2 class="orange-text important-text">Para ellos.</h2>
         <h4 id="hero-subtitle" class="important-text">Hasta un 25% de descuento</h4>
 
-        <button class="important-text white-text">¡Mira las ofertas!</button>
+        <button class="important-text white-text"><a id="hero-button" class="important-text" href="{% url 'tienda' %}">¡Mira las ofertas!</a></button>
 
     </section>
 
@@ -66,7 +66,7 @@
                     <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
                         <h2 class="card-title bold">$19.99</h2>
-                        <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
+                        <a href="{% url 'mi-carrito' %}"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                     <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
                         <h2 class="card-title bold">$19.99</h2>
-                        <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
+                        <a href="{% url 'mi-carrito' %}"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                     <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
                         <h2 class="card-title bold">$19.99</h2>
-                        <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
+                        <a href="{% url 'mi-carrito' %}"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                     <img src="{% static 'images/props/5-Stars-PNG-Transparent.png' %}" alt="stars" height="50vh">
                     <div class="price-and-button">
                         <h2 class="card-title bold">$19.99</h2>
-                        <a href="cart.html"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
+                        <a href="{% url 'mi-carrito' %}"><button class="material-symbols-outlined" id="price-button">shopping_cart</button></a>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
         <h2 class="important-text white-text" id="rentals-header">Servicio de Alquiler de Trajes</h2>
         <h3 class="important-text">Hasta un <span class="important-text orange-text">50% de descuento</span></h3>
         <h3 class="important-text">en trajes <span class="important-text yellow-text">elegantes, modernos y de marca.</span></h3>
-        <a href="tienda.html"><button class="important-text" id="rental-button">Explora nuestras opciones</button></a>
+        <a href="{% url 'tienda' %}"><button class="important-text" id="rental-button">Explora nuestras opciones</button></a>
     </section>
 
     <!-- Newsletter -->
@@ -140,11 +140,11 @@
         <div id="footer-data">
             <div id="footer-titles">
                 <!-- About Us -->
-                <h2 id="footer-title" class="important-text white-text footer-title">Acerca de Nosotros</h2>
+                <h2 id="footer-title" class="important-text white-text footer-title"><a id="footer-link" class="important-text" href="{% url 'acerca-de-nosotros' %}">Acerca de Nosotros</a></h2>
                 <!-- Account -->
-                <h2 id="footer-title" class="important-text white-text footer-title">Mi Cuenta</h2>
+                <h2 id="footer-title" class="important-text white-text footer-title"><a id="footer-link" class="important-text" href="{% url 'mi-cuenta' %}">Mi Cuenta</a></h2>
                 <!-- Contact -->
-                <h2 id="footer-title" class="important-text white-text footer-title">Contacto</h2>
+                <h2 id="footer-title" class="important-text white-text footer-title"><a id="footer-link" class="important-text" href="{% url 'contacto' %}">Contacto</a></h2>
                 <!-- Social Media -->
                 <div id="social-media-items">
                     <button id="social-button"><i class="bi bi-facebook"></i></button>
@@ -152,8 +152,8 @@
                     <button id="social-button"><i class="bi bi-instagram"></i></button>
                 </div>
                 <div id="footer-logos">
-                    <a href="#"><img src="{% static 'images\logos\logo-white.png' %}" alt="logo-oscaralfrm" width="150px"></a>
-                    <a href="#"><img src="{% static 'images\logos\VolpeWhite.png' %}" alt="logo-volpe" width="150px"></a>
+                    <a href="https://www.linkedin.com/in/oscar-romero-2726b0218/"><img src="{% static 'images\logos\logo-white.png' %}" alt="logo-oscaralfrm" width="150px"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'images\logos\VolpeWhite.png' %}" alt="logo-volpe" width="150px"></a>
                 </div>
             </div>
         </div>
@@ -162,6 +162,6 @@
 
     </section>
 
-    <script src="{% static 'scripts/index.js' %}">></script>
+    <script src="{% static 'scripts/index.js' %}"></script>
 </body>
 </html>

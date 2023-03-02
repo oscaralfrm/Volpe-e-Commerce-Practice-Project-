@@ -22,6 +22,18 @@ def product(request):
 def cart(request):
     return render(request, 'cart.html', {})
 
+def product(request):
+    return render(request, 'product.html', {})
+
+def cart(request):
+    return render(request, 'cart.html', {})
+
+def about_us(request):
+    return render(request, 'about.html', {})
+
+def contact(request):
+    return render(request, 'contact.html', {})
+
 
 # Error Management/Handling
 
